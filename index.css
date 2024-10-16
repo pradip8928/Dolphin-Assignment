@@ -26,7 +26,7 @@ nav {
 }
 
 .logo img {
-    height: 50px; /* Adjust the size of the logo */
+    height: 2.2rem; 
 }
 
 
@@ -51,6 +51,9 @@ nav {
     border-radius: 38px;
     padding: 10px;
 }
+
+
+ 
 .nav-links li a i {
     font-size: 30px;
     margin-right: 8px;
@@ -60,9 +63,21 @@ nav {
     text-decoration: underline;
 }
  
-/* Banner Section */
+
+@media (max-width: 768px) {
+
+    .nav-links li .chat-to-our-experts{
+        display: none;
+    }
+    
+.logo img {
+    height: 2rem; 
+}
+
+    
+}
 .banner {
-    background-image: url('./Assets/Banner.png'); /* Replace with your background image */
+    background-image: url('./Assets/Banner.png');
     background-size: cover;
     background-position: center;
     padding: 100px 20px;
@@ -87,7 +102,7 @@ nav {
 .banner-text h1 {
     font-size: 3rem;
     margin-bottom: 20px;
-    color: #ff4c4c; /* Accent color */
+    color: #ff4c4c;
 }
 
 .subheading {
@@ -99,6 +114,7 @@ nav {
 .description {
     font-size: 1rem;
     margin-bottom: 25px;
+    max-width: inherit;
 }
 
 .cta-btn {
@@ -121,12 +137,12 @@ nav {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 40%;
+    max-width: 30%;
     color: #333;
 }
 
 .banner-form h2 {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     margin-bottom: 15px;
     color: #007BFF;
 }
@@ -141,7 +157,7 @@ nav {
     margin-bottom: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 0.7rem;
 }
 
 .banner-form button {
@@ -159,22 +175,97 @@ nav {
     background-color: #e03d3d;
 }
 
-/* Responsive Design */
+/* Responsive Design (Tablet and Mobile) */
 @media (max-width: 768px) {
+    .banner {
+        padding: 50px 10px;
+    }
+
     .banner-content {
         flex-direction: column;
         text-align: center;
     }
 
-    .banner-text, .banner-form {
+    .banner-text {
         max-width: 100%;
+        margin-bottom: 30px;  
     }
 
     .banner-form {
+        max-width: 100%;
+        padding: 20px 15px;
         margin-top: 20px;
     }
+
+    .banner-text h1 {
+        font-size: 2.2rem;  
+    }
+
+    .subheading {
+        font-size: 1.3rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+
+    .cta-btn {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    .banner-form h2 {
+        font-size: 1.5rem;
+    }
+
+    .banner-form input, .banner-form select {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .banner-form button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
 }
-/* Services Styles */
+
+@media (max-width: 480px) {
+    .banner {
+        padding: 30px 10px;
+    }
+
+    .banner-text h1 {
+        font-size: 2rem;
+    }
+
+    .subheading {
+        font-size: 1.2rem;
+    }
+
+    .description {
+        font-size: 0.85rem;
+    }
+
+    .cta-btn {
+        font-size: 0.85rem;
+        padding: 7px 12px;
+    }
+
+    .banner-form h2 {
+        font-size: 1.3rem;
+    }
+
+    .banner-form input, .banner-form select {
+        font-size: 0.85rem;
+        padding: 7px;
+    }
+
+    .banner-form button {
+        font-size: 0.85rem;
+        padding: 8px;
+    }
+}
+ 
 /* Services Section */
 .services {
     background-color: #f9f9f9;
@@ -243,12 +334,11 @@ nav {
 }
 
 
- 
-/* Our Experience Section */
+  
 /* Our Experience Section */
 .experience {
     background-color: #f9f9f9;
-    padding: 60px 20px; /* Remove horizontal padding to bring image and text together */
+    padding: 60px 20px;  
 }
 
 .experience .container {
@@ -262,24 +352,24 @@ nav {
 .experience-content {
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
+     
     justify-content: center;
-    align-items: stretch; /* Ensures the image and content stretch to the same height */
+    align-items: stretch;  
     width: 100%;
 }
 
 .experience-image img {
     max-width: 100%;
     height: 50vh;
-    /* border-radius: 10px; */
+    
     flex-basis: 50%;
     margin-right: 20px;  
-    object-fit: cover; /* Ensures the image fits without distorting */
+    object-fit: cover;  
 }
 
 .experience-text {
     flex-basis: 50%;
-    padding-left: 0; /* Remove padding */
+    padding-left: 0;  
 }
 
 .experience-text h2 {
@@ -302,7 +392,7 @@ nav {
     text-align: justify;
 }
 
-/* Play Button and How it Works Text */
+ 
 .play-section {
     display: flex;
     align-items: center;
@@ -341,17 +431,10 @@ nav {
 
 /* Featured In Section */
 .featured-in {
-    background-color: #fff; /* Adjust background if necessary */
+    background-color: #fff;  
     padding: 60px 0;
     text-align: center;
 }
-
-/* .featured-in h2 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 10px;
-} */
- 
  
  
 .featured-in  .section-title {
@@ -381,7 +464,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px; /* Adds space between logos */
+    gap: 20px;  
 }
 
 .featured-image {
@@ -418,7 +501,7 @@ nav {
 
 .testimonial-wrapper {
     display: flex;
-    /* justify-content: center;   */
+    
     justify-content: space-between;  
     flex-wrap: wrap;  
     gap: 20px;  
@@ -464,7 +547,7 @@ nav {
 
 .rating span {
     font-size: 1.5rem;
-    color: #f4c542; /* Yellow color for stars */
+    color: #f4c542;  
     margin-bottom: 52px;
 }
 
@@ -501,12 +584,12 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px; /* Space between questions */
+    gap: 15px;  
 }
 
 .faq-item {
-    width: 100%; /* Full width */
-    max-width: 1024px; /* Limit width for readability */
+    width: 100%;  
+    max-width: 1024px;  
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -532,15 +615,15 @@ nav {
 }
 
 .faq-answer {
-    max-height: 0; /* Start with a max-height of 0 */
-    overflow: hidden; /* Hide overflow */
-    transition: max-height 0.5s ease-in-out; /* Smooth transition */
-    padding: 0 20px; /* Padding for when expanded */
+    max-height: 0; 
+    overflow: hidden;  
+    transition: max-height 0.5s ease-in-out; 
+    padding: 0 20px;  
 }
 
 .faq-answer.open {
-    max-height: 200px; /* Adjust based on expected content height */
-    padding: 15px 20px; /* Padding for expanded state */
+    max-height: 200px;  
+    padding: 15px 20px;  
 }
 
 .faq-answer p {
@@ -549,7 +632,7 @@ nav {
     text-align: justify;
 }
 
-/* Read More Button */
+
 .read-more {
     margin-top: 30px;
 }
@@ -569,7 +652,7 @@ nav {
 /* Responsive Design */
 @media (max-width: 768px) {
     .faq h2 {
-        font-size: 2rem; /* Smaller font on mobile */
+        font-size: 2rem; 
     }
 }
 /* Contact Styles */
@@ -616,7 +699,7 @@ nav {
 
 .upper-footer h3 {
     font-size: 1.5rem;
-    /* font: normal normal 600 40px/53px Saira; */
+   
     margin-bottom: 29px;
 }
  
@@ -628,7 +711,7 @@ nav {
 
 .btn.book-consultation {
     padding: 15px 30px;
-    background-color: #e0645a; /* Unnamed color */
+    background-color: #e0645a;  
     color: white;
     text-decoration: none;
     font-size: 1.1rem;
@@ -636,7 +719,7 @@ nav {
 }
 
 .btn.book-consultation:hover {
-    background-color: #d0554b; /* Slightly darker hover color */
+    background-color: #d0554b;  
 }
 
 /* Lower Footer */
